@@ -47,9 +47,10 @@
     <main>
       <section class="hero overlay">
         <div class="container">
-        <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button">Замовити послугу</button>
-      </div>
+          <h1>Ефективні рішення для вашого бізнесу</h1>
+          <button data-modal-open type="button" class="button">Замовити послугу</button>
+        
+        </div>
       </section>
       <section class="section heading">
        <div class="container">
@@ -114,6 +115,7 @@
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="list">
           <li class="img-work">
+            <div class="box-work">Десктопні додатки</div>
             <img
               src="./images/keyboard.jpg"
               alt=" робота на клавіатурі"
@@ -122,6 +124,7 @@
             />
           </li>
           <li class="img-work">
+            <div class="box-work">Мобільні додатки</div>
             <img
               src="./images/phone.jpg"
               alt="робота з телефоном"
@@ -130,6 +133,7 @@
             />
           </li>
           <li class="img-work">
+            <div class="box-work">Дизайнерські рішення</div>
             <img
               src="./images/tablet.jpg"
               alt="робота на планшеті"
@@ -437,5 +441,15 @@
             </div>
        </div>
     </footer>
+    <!-- МОДАЛЬНЕ ВІКНО -->
+    <div data-modal class="backdrop is-hidden" >
+      <div class="modal">
+        <button class="btn-close" type="button" data-modal-close>
+          <svg width="11px" height="11px">
+          <use href="./images/icons.svg#icon-Vector"></use>
+        </svg></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

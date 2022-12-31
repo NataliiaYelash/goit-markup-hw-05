@@ -161,7 +161,8 @@ body{
 .clients-link,
 .socials-link,
 .btn,
-.flex-border
+.flex-border,
+li.clients-item
 { 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -282,6 +283,11 @@ h1 {
     padding: 0;
 
     cursor: pointer;
+}
+
+.svg-close{
+    position: absolute;
+    transform: translate(-50%,-50%);
 }
 
 /*Section*/
@@ -487,17 +493,15 @@ h1 {
     display: flex;
     gap: 30px;
     padding: 0;
-    
-    
+       
 }
 
 .clients-item{
     width: 170px;
     height: 92px;
-    border:1px solid #AFB1B8 ;
+    border: 1px solid #AFB1B8 ;
     border-radius: 4px;
-
-    
+   
 }
 
 .clients-link{
@@ -510,13 +514,16 @@ h1 {
     
 }
 
-.clients-item:hover, 
 .clients-link:hover,
-.clients-item:focus,
 .clients-link:focus{
     fill:var(--accent-color) ; 
-    border:1px solid #2196F3 ;
-    
+}
+
+.clients-item:hover, 
+.clients-item:focus{
+    fill:var(--accent-color) ; 
+    border: 1px solid #2196F3 ;
+      
 }
 
 
